@@ -1,168 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<title>Mi Web</title>
-		<meta charset="UTF-8">
-	</head>
-	<body>
-		<header>
-			<h1>José Francisco Pérez</h1>
-			<img src="" alt="Señal Batman">
-			<p>Tu programador web</p>
-		</header>
 
-		<nav>
-			<ul>
-				<li>
-					<a href="#">Inicio</a>
-				</li>
-				
-				<li>
-					<a href="#quien-soy">Quién soy</a>
-				</li>
-				
-				<li>
-					<a href="#estudios">Estudios</a>
-				</li>
-				
-				<li>
-					<a href="#experiencia">Experiencia</a>
-				</li>
-				
-				<li>
-					<a href="#sobre-mi">Sobre mi</a>
-				</li>
-				
-				<li>
-					<a href="#contacto">Contacto</a>
-				</li>
-			</ul>
-		</nav>
+<head>
+    <title>Mi Web</title>
+    <meta charset="UTF-8">
+</head>
 
-		<div class="container">
-			
-			<section id="quien-soy">
+<body>
+    <header>
+        <h1>José Francisco Pérez</h1>
+        <img src="" alt="Señal Batman">
+        <p>Tu programador web</p>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#quien-soy">Quién soy</a>
+            </li>
+            <li>
+                <a href="#estudios">Estudios</a>
+            </li>
+            <li>
+                <a href="#experiencia">Experiencia</a>
+            </li>
+            <li>
+                <a href="#sobre-mi">Sobre mi</a>
+            </li>
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="quien-soy">
+            <figure>
+                <img src="images/IMG_1203-3.png" alt="foto de Jose Francisco" width="300" height="302">
+                <figcaption id="texto-mifoto">José Francisco Pérez</figcaption>
+            </figure>
+            <h2>Quien soy</h2>
+            <p>José Francisco Pérez</p>
+            <p>Profesión: Programador Web</p>
+            <p>Idiomas: Español (nivel nativo); ingles (nivel intermedio)</p>
+            <p>Disponibilidad para movilidad geográfica: Todas las provincias de España
+                <p>Carnet de conducir: B1</p>
+                <p>Vehículo propio</p>
+        </section>
+        <section id="estudios">
+            <h2>Estudios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Periodo</th>
+                        <th>Nombre del curso</th>
+                        <th>Nombre del centro</th>
+                        <th>Localidad del centro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Actualmente</td>
+                        <td>Web Development Master Bootcamp</td>
+                        <td>Keepcoding</td>
+                        <td>Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Programación con Java-JEE</td>
+                        <td>Ipartek / Lanbide</td>
+                        <td>Bilbao</td>
+                    </tr>
+                    <tr>
+                        <td>2015 - 2016</td>
+                        <td>Creación y gestión de microempresas</td>
+                        <td>CIFP Tartanga / Lanbide</td>
+                        <td>Erandio (Bizkaia)</td>
+                    </tr>
+                    <tr>
+                        <td>2015 - 2016</td>
+                        <td>Web Development Part-time</td>
+                        <td>Ironhack</td>
+                        <td>Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>1984 - 1986</td>
+                        <td>Técnico superior en programación de aplicaciones multiplataforma</td>
+                        <td>Centro San Luis</td>
+                        <td>Bilbao</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Periodo</th>
+                        <th>Puesto de trabajo</th>
+                        <th>Nombre de la empresa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1986</td>
+                        <td>Programador de aplicaciones de gestión en Cobol</td>
+                        <td>Freelance</td>
+                    </tr>
+                    <tr>
+                        <td>1986 - 1994</td>
+                        <td>Programador de aplicaciones de gestión en Basic</td>
+                        <td>Ferrovial</td>
+                    </tr>
+                    <tr>
+                        <td>1986 - 1994</td>
+                        <td>Administrativo delegación País Vasco - Cantabria</td>
+                        <td>Ferrovial</td>
+                    </tr>
+                    <tr>
+                        <td>1994 - 2015</td>
+                        <td>Administrativo de obras y UTEs</td>
+                        <td>Ferrovial</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-				<figure>
-					<img src="images/IMG_1203-3.png" alt="foto de Jose Francisco" width="300" height="302">
-					<figcaption id="texto-mifoto">José Francisco Pérez</figcaption>
-				</figure>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <video id="video-dron" width="550" height="300" controls>
+                <source src="videos/Entrada.mp4" type="video/mp4">
+            </video>
+            <p class="aficion-info">Drones: viaje desde El Puente Colgante de Bilbao</p>
+        </section>
 
-				<h2>Quien soy</h2>
-				<p>José Francisco Pérez</p> 
-				<p>Profesión: Programador Web</p>
-				<p>Idiomas: Español (nivel nativo); ingles (nivel intermedio)</p>
-				<p>Disponibilidad para movilidad geográfica: Todas las provincias de España
-				<p>Carnet de conducir: B1</p>
-				<p>Vehículo propio</p>
-			</section>
-			
-			<section id="estudios">
-				<h2>Estudios</h2>
-				<table>
-						<thead>
-							<tr>
-								<th>Periodo</th>
-								<th>Nombre del curso</th>
-								<th>Nombre del centro</th>
-								<th>Localidad del centro</th>
-							</tr>
-						</thead>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si quieres ponerte en contacto conmigo, rellena este formulario</p>
+            <div>
+            	<form id="form-contact" class="form" name="contact-josefco" method="get" novalidate>
+						<div class="form-row">
+							<label for="nombre">Nombre:</label>
+							<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+						</div>
 
-						<tbody>
-							<tr>
-								<td>Actualmente</td>
-								<td>Web Development Master Bootcamp</td>
-								<td>Keepcoding</td>
-								<td>Madrid</td>
-							</tr>
+						<div class="form-row">
+							<label>Email:</label>
+							<input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+						</div>
+
+						<div class="form-row">
+							<textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios
+							</textarea>
+						</div>
+
+						<div class="form-row">
+							<p>¿Cómo me conociste?</p>
+							<label for="tipo_conocer_1">Linkedin</label>
+							<input type="radio" id="tipo_conocer_1" name="tipo_conocer" value="Prensa" required checked>
+							<label for="tipo_mision_2">Twitter</label>
+							<input type="radio" id="tipo_conocer_2" name="tipo_conocer" value="Linkedin" required>
+							<label for="tipo_mision_3">Facebook</label>
+							<input type="radio" id="tipo_conocer_3" name="tipo_conocer" value="Facebook" required>
+							<label for="tipo_mision_4">Otros</label>
+							<input type="radio" id="tipo_conocer_4" name="tipo_conocer" value="Otros" required>
+						</div>
 						
-							<tr>
-								<td>2016</td>
-								<td>Programación con Java-JEE</td>
-								<td>Ipartek / Lanbide</td>
-								<td>Bilbao</td>
-							</tr>
+						<div class="form-row">
+							<label for="telefono">Número de teléfono</label>
+							<input type="tel" id="telefono" name="telefono" min="9" max="9" required>
+						</div>
 
-							<tr>
-								<td>2015 - 2016</td>
-								<td>Creación y gestión de microempresas</td>
-								<td>CIFP Tartanga / Lanbide</td>
-								<td>Erandio (Bizkaia)</td>
-							</tr>
+						<div class="form-row">
+							<button type="submit" id="enviar">Enviar </button>
+						</div>
+				</form>
+            </div>
+        </section>
 
-							<tr>
-								<td>2015 - 2016</td>
-								<td>Web Development Part-time</td>
-								<td>Ironhack</td>
-								<td>Madrid</td>
-							</tr>
+    </div>
 
-							<tr>
-								<td>1984 - 1986</td>
-								<td>Técnico superior en programación de aplicaciones multiplataforma</td>
-								<td>Centro San Luis</td>
-								<td>Bilbao</td>
-							</tr>
-						</tbody>
-				</table>
-			</section>
-			
-			<section id="experiencia">
-				<h2>Experiencia</h2>
-				<table>
-						<thead>
-							<tr>
-								<th>Periodo</th>
-								<th>Puesto de trabajo</th>
-								<th>Nombre de la empresa</th>
-							</tr>
-						</thead>
+</body>
 
-						<tbody>
-							<tr>
-								<td>1986</td>
-								<td>Programador de aplicaciones de gestión en Cobol</td>
-								<td>Freelance</td>
-							</tr>
+<footer class="footer">
+    José Francisco Pérez &copy; 2016
+</footer>
 
-							<tr>
-								<td>1986 - 1994</td>
-								<td>Programador de aplicaciones de gestión en Basic</td>
-								<td>Ferrovial</td>
-							</tr>
-
-							<tr>
-								<td>1986 - 1994</td>
-								<td>Administrativo delegación País Vasco - Cantabria</td>
-								<td>Ferrovial</td>
-							</tr>
-
-							<tr>
-								<td>1994 - 2015</td>
-								<td>Administrativo de obras y UTEs</td>
-								<td>Ferrovial</td>
-							</tr>
-						</tbody>
-				</table>
-			</section>
-			
-			<section id="sobre-mi">
-				<h2>Sobre mí</h2>
-				<video id="video-dron" width="550" height="300" controls>
-					<source src="videos/Entrada.mp4" type="video/mp4">
-				</video>
-				<p class="aficion-info">Drones: viaje desde El Puente Colgante de Bilbao</p>		
-			</section>
-			
-			<section id="contacto">
-				<h2>Contacto</h2>
-			</section>
-
-		</div>
-	</body>
-
-	<footer class="footer">
-			José Francisco Pérez &copy; 2016
-	</footer>
 </html>
