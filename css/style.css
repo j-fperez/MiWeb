@@ -3,6 +3,14 @@ body {
 	margin: 0px;
 }
 
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
 .navbar {
 	position: fixed;
 	background-color: 247,247,247;
