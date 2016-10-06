@@ -4,6 +4,7 @@
 <head>
     <title>Mi Web</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="images/IMG_favicon.png" sizes="16x16" type="image/png"> 
 </head>
 
 <body>
@@ -132,6 +133,7 @@
             <h2>Sobre mí</h2>
             <video id="video-dron" width="550" height="300" controls>
                 <source src="videos/Entrada.mp4" type="video/mp4">
+                Video no soportado
             </video>
             <p class="aficion-info">Drones: viaje desde El Puente Colgante de Bilbao</p>
         </section>
@@ -140,7 +142,7 @@
             <h2>Contacto</h2>
             <p>Si quieres ponerte en contacto conmigo, rellena este formulario</p>
             <div>
-            	<form id="form-contact" class="form" name="contact-josefco" method="get" novalidate>
+            	<form id="form-contact" class="form" name="contact-josefco" method="get" novalidate="">
 						<div class="form-row">
 							<label for="nombre">Nombre:</label>
 							<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -169,7 +171,7 @@
 						</div>
 				
 						<div class="form-row">
-							<textarea name="comentarios" rows="10" cols="40" placeholder="Escribe aquí tus comentarios"></textarea>
+							<textarea id="comentarios" name="comentarios" rows="10" cols="40" placeholder="Escribe aquí tus comentarios"></textarea>
 						</div>
 
 						<div class="form-row">
