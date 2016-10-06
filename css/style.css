@@ -13,7 +13,7 @@ body {
 
 .navbar {
 	position: fixed;
-	background-color: 247,247,247;
+	background-color: springgreen; 
 	top: 0px;
 	width: 100%;
 	opacity: 0.9;
@@ -44,7 +44,7 @@ body {
 	left: 0;
 	top: 82%;
 	width: 100%;
-	color: springgreen;
+	color: orange; 
 	font-family: 'Droid Sans', sans-serif;
 	text-align: center;
 	font-size: 50px;
@@ -66,18 +66,36 @@ body {
 	position: absolute;
 	left: 0;
 	top: 90%;
-	color: springgreen;
+	color: orange;
 	width: 100%;
 	text-align: center;
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 26px;
 }
 
+/*.about-me {
+	padding: 300px 20px 100px 20px; 
+}
+*/
+.about-me .foto-josefco {
+	max-width: 50;
+	float: right;
+	text-align: center;
+}
 
+.about-me .josefco-info {
+	max-width: 50%;
+	float: left;
+}
 
+.section-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
 
 #texto-mifoto {
 	font-family: 'Lora', serif;
+	text-align: center;
 }
 
 th, td {
