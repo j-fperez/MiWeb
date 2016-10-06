@@ -9,7 +9,6 @@ body {
 	top: 0px;
 	width: 100%;
 	opacity: 0.9;
-	z-index: 1;
 }
 
 .navbar .navbar-list {
@@ -35,15 +34,15 @@ body {
 .portada {
 	position: absolute;
 	left: 0;
-	top: 80%;
+	top: 82%;
 	width: 100%;
 	color: springgreen;
 	font-family: 'Droid Sans', sans-serif;
 	text-align: center;
 	font-size: 50px;
-	animation: titleAnimation 2s forwards;
+	/*animation: titleAnimation 2s forwards;
 	visibility: hidden;
-	animation-delay: 0.8s;
+	animation-delay: 0.8s;*/
 }
 
 .portada-img {
