@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="images/IMG_favicon.png" sizes="16x16" type="image/png"> 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lora|Roboto" rel="stylesheet">
 </head>
 
@@ -42,19 +43,16 @@
 
     <div class="container">
         <section id="quien-soy" class="about-me clearfix section-container">            
-            
+            <h2>Quien soy</h2>
              <div class="josefco-info">
-                <h2>Quien soy</h2>
-                <p>José Francisco Pérez</p>
+                
+                <p id="mi-nombre">José Francisco Pérez</p>
                 <p>Profesión: Programador Web</p>
                 <p>Idiomas: Español (nivel nativo); ingles (nivel intermedio)</p>
                 <p>Disponibilidad para movilidad geográfica: Todas las provincias de España
                 <p>Carnet de conducir: B1</p>
                 <p>Vehículo propio</p>
             </div>
-
-
-
 
             <div class="foto-josefco">
                 <figure>
@@ -63,54 +61,56 @@
                 </figure>
             </div>
 
-           
-
         </section>
 
         <section id="estudios" class="section-container">
+            <div class="row container">
             <h2>Estudios</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Periodo</th>
-                        <th>Nombre del curso</th>
-                        <th>Nombre del centro</th>
-                        <th>Localidad del centro</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Actualmente</td>
-                        <td>Web Development Master Bootcamp</td>
-                        <td>Keepcoding</td>
-                        <td>Madrid</td>
-                    </tr>
-                    <tr>
-                        <td>2016</td>
-                        <td>Programación con Java-JEE</td>
-                        <td>Ipartek / Lanbide</td>
-                        <td>Bilbao</td>
-                    </tr>
-                    <tr>
-                        <td>2015 - 2016</td>
-                        <td>Creación y gestión de microempresas</td>
-                        <td>CIFP Tartanga / Lanbide</td>
-                        <td>Erandio (Bizkaia)</td>
-                    </tr>
-                    <tr>
-                        <td>2015 - 2016</td>
-                        <td>Web Development Part-time</td>
-                        <td>Ironhack</td>
-                        <td>Madrid</td>
-                    </tr>
-                    <tr>
-                        <td>1984 - 1986</td>
-                        <td>Técnico superior en programación de aplicaciones multiplataforma</td>
-                        <td>Centro San Luis</td>
-                        <td>Bilbao</td>
-                    </tr>
-                </tbody>
-            </table>
+                <div class="col-12">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Periodo</th>
+                                <th>Nombre del curso</th>
+                                <th>Nombre del centro</th>
+                                <th>Localidad del centro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Actualmente</td>
+                                <td>Web Development Master Bootcamp</td>
+                                <td>Keepcoding</td>
+                                <td>Madrid</td>
+                            </tr>
+                            <tr>
+                                <td>2016</td>
+                                <td>Programación con Java-JEE</td>
+                                <td>Ipartek / Lanbide</td>
+                                <td>Bilbao</td>
+                            </tr>
+                            <tr>
+                                <td>2015 - 2016</td>
+                                <td>Creación y gestión de microempresas</td>
+                                <td>CIFP Tartanga / Lanbide</td>
+                                <td>Erandio (Bizkaia)</td>
+                            </tr>
+                            <tr>
+                                <td>2015 - 2016</td>
+                                <td>Web Development Part-time</td>
+                                <td>Ironhack</td>
+                                <td>Madrid</td>
+                            </tr>
+                            <tr>
+                                <td>1984 - 1986</td>
+                                <td>Técnico superior en programación de aplicaciones multiplataforma</td>
+                                <td>Centro San Luis</td>
+                                <td>Bilbao</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
         <section id="experiencia" class="section-container">
@@ -127,34 +127,36 @@
                     <tr>
                         <td>1986</td>
                         <td>Programador de aplicaciones de gestión en Cobol</td>
-                        <td>Freelance</td>
+                        <td class="td-centered">Freelance</td>
                     </tr>
                     <tr>
                         <td>1986 - 1994</td>
                         <td>Programador de aplicaciones de gestión en Basic</td>
-                        <td>Ferrovial</td>
+                        <td class="td-centered">Ferrovial</td>
                     </tr>
                     <tr>
                         <td>1986 - 1994</td>
                         <td>Administrativo delegación País Vasco - Cantabria</td>
-                        <td>Ferrovial</td>
+                        <td class="td-centered">Ferrovial</td>
                     </tr>
                     <tr>
                         <td>1994 - 2015</td>
                         <td>Administrativo de obras y UTEs</td>
-                        <td>Ferrovial</td>
+                        <td class="td-centered">Ferrovial</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section id="sobre-mi" class="section-container">
-            <h2>Sobre mí</h2>
-            <video id="video-dron" width="550" height="300" controls>
-                <source src="videos/Entrada.mp4" type="video/mp4">
-                Video no soportado
-            </video>
-            <p class="aficion-info">Drones: viaje desde El Puente Colgante de Bilbao</p>
+        <section id="sobre-mi" class="hobby section-container">
+             <h2>Sobre mí</h2>
+            <div class="row-flex aficion-item item-1">      
+                <video id="video-dron" width="550" height="300" controls>
+                    <source src="videos/Entrada.mp4" type="video/mp4">
+                    Video no soportado
+                </video>
+                <p class="aficion-info">Drones: viaje desde El Puente Colgante de Bilbao</p>
+            </div>
         </section>
 
         <section id="contacto" class="section-container">
@@ -190,7 +192,7 @@
 						</div>
 				
 						<div class="form-row">
-							<textarea id="comentarios" name="comentarios" rows="10" cols="40" placeholder="Escribe aquí tus comentarios"></textarea>
+							<textarea id="comentarios" name="comentarios" rows="30" cols="100" placeholder="Escribe aquí tus comentarios"></textarea>
 						</div>
 
 						<div class="form-row">
@@ -199,9 +201,7 @@
 				</form>
             </div>
         </section>
-
     </div>
-
 </body>
 
 <footer class="footer">

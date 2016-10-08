@@ -1,6 +1,13 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+
+}
+
 body {
 	font-family: 'Droid Sans', sans-serif;
 	margin: 0px;
+	overflow-x: hidden;
 }
 
 .clearfix:after {
@@ -16,6 +23,7 @@ body {
 	background-color: springgreen; 
 	top: 0px;
 	width: 100%;
+	z-index: 1;
 	opacity: 0.9;
 }
 
@@ -73,32 +81,103 @@ body {
 	font-size: 26px;
 }
 
-/*.about-me {
+.about-me {
 	padding: 300px 20px 100px 20px; 
 }
-*/
+
 .about-me .foto-josefco {
-	max-width: 50;
+	max-width: 50%;
 	float: right;
 	text-align: center;
 }
 
 .about-me .josefco-info {
 	max-width: 50%;
+	margin-left: 50px;
 	float: left;
 }
 
-.section-container {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
+#mi-nombre::first-letter {
+	font-size: 400%;
+	font-weight: bold;
+} 
 
 #texto-mifoto {
 	font-family: 'Lora', serif;
 	text-align: center;
 }
 
+.row-flex {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+}
+
+.section-container {
+	padding-top: 55px;
+	padding-bottom: 0px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+thead > tr {
+	background-color: #5D6D7E;
+}
+
+th {
+	height: 50px;
+}
+
+
 th, td {
+	padding: 8px;
+	border-bottom: 1px solid #ddd;
 	font-family: 'Roboto', sans-serif;	
+}
+
+tbody > tr:hover {
+	background-color: #dedddd;
+}
+
+.td-centered {
+	text-align: center;
+}
+
+
+.aficion-item {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.aficion-info {
+	align-self: center;
+
+}
+
+.no-flexbox .hobby {
+	overflow: auto;
+}
+
+.no-flexbox .hobby .item-1 {
+	float: left;
+}
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.92);
+	color: white;
+	height: 50px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	justify-content: center;
 }
 
