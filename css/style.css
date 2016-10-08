@@ -47,6 +47,12 @@ body {
 	font-weight: bold;
 }
 
+
+.navbar .navbar-list .navbar-item a:hover {
+	color: #F7F7F7;
+	background-color: rgb(232,111,49);
+}
+
 .portada {
 	position: absolute;
 	left: 0;
