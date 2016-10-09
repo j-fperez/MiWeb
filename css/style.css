@@ -124,6 +124,26 @@ body {
 	-webkit-flex-flow: row wrap;
 }
 
+.dron-video {
+	max-width: 100%;
+	height: 300px;
+}
+
+.aficion-item {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.aficion-info {
+	align-self: center;
+
+}
+
 .section-container {
 	padding-top: 55px;
 	padding-bottom: 0px;
@@ -158,27 +178,16 @@ tbody > tr:hover {
 }
 
 
-.aficion-item {
-	display: flex;
-	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	flex-grow: 1;
-}
-
-.aficion-info {
-	align-self: center;
-
-}
-
 .no-flexbox .hobby {
 	overflow: auto;
 }
 
 .no-flexbox .hobby .item-1 {
 	float: left;
+}
+
+.no-flexbox .hobby .item-2 {
+	float: right;
 }
 
 .footer {
