@@ -103,6 +103,10 @@ body {
 	float: left;
 }
 
+.mi-foto{
+	border-radius: 17%;
+}
+
 #mi-nombre::first-letter {
 	font-size: 400%;
 	font-weight: bold;
