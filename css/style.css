@@ -91,6 +91,9 @@ body {
 	text-align: center;
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 26px;
+	opacity: 0;
+	animation: subTitleAnimation 3s forwards;
+	animation-delay: 1s;
 }
 
 .about-me {
@@ -193,6 +196,18 @@ tbody > tr:hover {
 	100%{
 		font-size: 50px;
 		visibility: visible;
+	}
+}
+
+@keyframes subTitleAnimation {
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
 	}
 }
 
