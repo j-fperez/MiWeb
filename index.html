@@ -43,7 +43,7 @@
 
     <div class="container">
         <section id="quien-soy" class="about-me clearfix section-container">            
-            <h2>Quien soy</h2>
+            <!--<h2>Quien soy</h2>-->
              <div class="josefco-info">
                 
                 <p id="mi-nombre">José Francisco Pérez</p>
@@ -65,7 +65,7 @@
 
         <section id="estudios" class="section-container">
             <div class="row container">
-            <h2>Estudios</h2>
+            <!--<h2>Estudios</h2>-->
                 <div class="col-12">
                     <table>
                         <thead>
@@ -114,7 +114,7 @@
         </section>
 
         <section id="experiencia" class="section-container">
-            <h2>Experiencia</h2>
+            <!--<h2>Experiencia</h2>-->
             <table>
                 <thead>
                     <tr>
@@ -171,18 +171,18 @@
         </section>
 
         <section id="contacto" class="section-container">
-            <h2>Contacto</h2>
+            <!--<h2>Contacto</h2>-->
             <p>Si quieres ponerte en contacto conmigo, rellena este formulario</p>
             <div>
             	<form id="form-contact" class="form" name="contact-josefco" method="get">
 						<div class="form-row">
-							<label for="nombre">Nombre:</label>
-							<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+							<label for="nombre">Nombre y apellidos:</label>
+							<input type="text" id="nombre" name="nombre" size="55" placeholder="Nombre y apellidos" required>
 						</div>
 
 						<div class="form-row">
 							<label for ="email">Email:</label>
-							<input type="email" id="email" name="email" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
+							<input type="email" id="email" name="email" size="35" placeholder="name@company.com" pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required>
 						</div>		
 
 						<div class="form-row">
@@ -199,7 +199,8 @@
 						
 						<div class="form-row">
 							<label for="telefono">Número de teléfono</label>
-							<input type="tel" id="telefono" name="telefono" min="9" max="9" required>
+							<input type="tel" id="telefono" name="telefono" placeholder="+Country code 999999999"
+                            pattern="^\+\d{1,3}\s\d{9}$" required>
 						</div>
 				
 						<div class="form-row">
@@ -216,7 +217,7 @@
 </body>
 
 <footer class="footer">
-    José Francisco Pérez &copy; 2016
+     &copy; José Francisco Pérez 2016
 </footer>
 
 </html>
