@@ -123,9 +123,51 @@ function changeMenuStyle(evt){
 		navbar.style.backgroundColor = '247,247,247';
 		deleteActiveClass();
 		if (Modernizr.classList) {
-			document.querySelector('a[href$="equipo"]').parentNode.classList.add("active");
+			document.querySelector('a[href$="estudios"]').parentNode.classList.add("active");
 		} else {
-			document.querySelector('a[href$="equipo"]').parentNode.className += " active";
+			document.querySelector('a[href$="estudios"]').parentNode.className += " active";
+		}
+
+	} else if (window.pageYOffset >= offsetExperiencia && window.pageYOffset < offsetSobreMi){
+		if(!previous) {
+			previous = 4;
+		} else if (previous == 4) {
+			return false;
+		}
+		navbar.style.backgroundColor = 'springgreen';
+		deleteActiveClass()
+		if (Modernizr.classList) {
+			document.querySelector('a[href$="experiencia"]').parentNode.classList.add("active-reverse");
+		} else { 
+			document.querySelector('a[href$="experiencia"]').parentNode.className += " active-reverse";
+		}
+
+	} else if (window.pageYOffset >= offsetSobreMi && window.pageYOffset < offsetContacto){
+		if(!previous) {
+			previous = 5;
+		} else if (previous == 5) {
+			return false;
+		}
+		navbar.style.backgroundColor = '247,247,247';
+		deleteActiveClass()
+		if (Modernizr.classList) {
+			document.querySelector('a[href$="sobre-mi"]').parentNode.classList.add("active");
+		} else { 
+			document.querySelector('a[href$="sobre-mi"]').parentNode.className += " active";
+		}
+
+	} else if (window.pageYOffset >= offsetContacto){
+		if(!previous) {
+			previous = 6;
+		} else if (previous == 6) {
+			return false;
+		}
+		navbar.style.backgroundColor = 'springgreen';
+		deleteActiveClass()
+		if (Modernizr.classList) {
+			document.querySelector('a[href$="contacto"]').parentNode.classList.add("active-reverse");
+		} else { 
+			document.querySelector('a[href$="contacto"]').parentNode.className += " active-reverse";
 		}
 	}
 }
