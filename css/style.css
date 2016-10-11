@@ -42,7 +42,6 @@ body {
 .navbar .navbar-list .navbar-item.active {
 	color: #F7F7F7;
 	background-color: rgb(232,111,49);
-	/* #A4A4A4; */
 }
 
 .navbar .navbar-list .navbar-item a{
@@ -154,8 +153,8 @@ body {
 }
 
 .section-container {
-	padding-top: 55px;
-	padding-bottom: 0px;
+	padding-top: 64px;
+	padding-bottom: 64px;
 }
 
 table {
@@ -163,6 +162,9 @@ table {
 	border-collapse: collapse;
 }
 
+thead {
+	color: white;
+}
 thead > tr {
 	background-color: #5D6D7E;
 }
@@ -175,7 +177,7 @@ th {
 th, td {
 	padding: 8px;
 	border-bottom: 1px solid #ddd;
-	font-family: 'Roboto', sans-serif;	
+	font-family: 'Roboto', sans-serif;
 }
 
 tbody > tr:hover {
