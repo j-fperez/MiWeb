@@ -13,11 +13,11 @@ if (!Modernizr.inputtypes.date){
 			});
 		});
 }
-
+*/
 if (!Modernizr.inputtypes.number) {
 	$.getScript('js/number-polyfill.js');
 }
-*/
+
 var form = document.getElementById("form-contact");
 
 /*
@@ -27,39 +27,28 @@ if (Modernizr.classList) {
 } else {
 	loadingButton.className += "fa fa-spinner fa-spin";
 }
+*/
+var otrosInput = document.getElementsByName("tipo_conocer");
 
-var apellidosInput = document.getElementsByName("tienes_apellidos");
-var tooManyEnemies = document.getElementById("too-many-enemies");
-var ejercitoInput = document.getElementById("ejercito");
+var inputOtros = document.createElement("input");
+inputOtros.setAttribute("id", "otros");
+inputOtros.setAttribute("type", "text");
+inputOtros.setAttribute("name", "otros");
+inputOtros.setAttribute("size", "27");
+inputOtros.setAttribute("placeholder", "Introduce el nombre del medio");
+inputOtros.setAttribute("required", "");
 
-var inputApellidos = document.createElement("input");
-inputApellidos.setAttribute("id", "apellidos");
-inputApellidos.setAttribute("type", "text");
-inputApellidos.setAttribute("name", "apellidos");
-inputApellidos.setAttribute("placeholder", "Apellidos");
-inputApellidos.setAttribute("required", "");
-
-for (var i = 0; i < apellidosInput.length; i++) {
-	apellidosInput[i].addEventListener('click', function(){
-		if (this.value == 'yes') {
-			this.parentNode.appendChild(inputApellidos);
+for (var i = 0; i < otrosInput.length; i++) {
+	otrosInput[i].addEventListener('click', function(){
+		if (this.value == 'Otros') {
+			this.parentNode.appendChild(inputOtros);
 		} else {
-			if(document.getElementById("apellidos")) {
-				this.parentNode.removeChild(inputApellidos);
+			if(document.getElementById("otros")) {
+				this.parentNode.removeChild(inputOtros);
 			}
 		}
 	});
 }
-
-ejercitoInput.addEventListener('keyup', function(evt) {
-	if (parseInt(this.value) > 50) {
-		tooManyEnemies.style.display = 'block';
-	} else {
-		tooManyEnemies.style.display = 'none';
-	}
-});
-
-*/
 
 form.addEventListener("submit", function(evt){
 	var inputNombre = document.getElementById("nombre");
@@ -67,18 +56,12 @@ form.addEventListener("submit", function(evt){
 	var emailInput = document.getElementById("email");
 
 	var conocerRadioInput = {
-		"conocer1": document.getElementById("tipo_conocer_1"),
-		"conocer2": document.getElementById("tipo_conocer_2"),
-		"conocer3": document.getElementById("tipo_conocer_3"),
-		"conocer4": document.getElementById("tipo_conocer_4"),
+		"tipo_conocer_1": document.getElementById("tipo_conocer_1"),
+		"tipo_conocer_2": document.getElementById("tipo_conocer_2"),
+		"tipo_conocer_3": document.getElementById("tipo_conocer_3"),
+		"tipo_conocer_4": document.getElementById("tipo_conocer_4"),
 	};
 
-/*
-	var estasSeguroRadioInput = {
-		"seguro_si": document.getElementById("seguro_si"),
-		"seguro_no": document.getElementById("seguro_no")
-	};
-*/
 	var telefonoInput = document.getElementById("telefono");
 	var comentariosInput = document.getElementById("comentarios");
 	var submitInput = document.getElementById("enviar");
@@ -97,10 +80,13 @@ form.addEventListener("submit", function(evt){
 		return false;
 	}
 
-	if (conocerRadioInput.conocer1.checkValidity() == false) {
-		alert("Introduce el tipo de mision");
-		evt.preventDefault();
-		return false;
+	if(document.getElementById("otros")) {
+		if(document.getElementById("otros").checkValidity() == false){
+			alert("Escribe el nombre del medio por el que nos conociste")
+			document.getElementById("otros").focus();
+			evt.preventDefault();
+			return false;
+		}
 	}
 
 	if (telefonoInput.checkValidity() == false) {
@@ -116,7 +102,9 @@ form.addEventListener("submit", function(evt){
 		evt.preventDefault();
 		return false;
 	}
+});
 
+/*
 	submitInput.appendChild(loadingButton);
 	evt.preventDefault();
 
@@ -124,7 +112,5 @@ form.addEventListener("submit", function(evt){
 		submitInput.removeChild(loadingButton);
 		sendNotification("Formulario recibido", "Yo soy el body");
 	}, 1000);
-
-
 });
-
+*/
