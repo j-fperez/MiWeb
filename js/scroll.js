@@ -107,6 +107,7 @@ function changeMenuStyle(evt){
 		} else if (previous == 2) {
 			return false;
 		}
+
 		navbar.style.backgroundColor = 'springgreen';
 		deleteActiveClass()
 		if (Modernizr.classList) {
@@ -120,6 +121,7 @@ function changeMenuStyle(evt){
 		} else if (previous == 3) {
 			return false;
 		}
+
 		navbar.style.backgroundColor = 'springgreen';
 		deleteActiveClass();
 		if (Modernizr.classList) {
@@ -134,6 +136,7 @@ function changeMenuStyle(evt){
 		} else if (previous == 4) {
 			return false;
 		}
+
 		navbar.style.backgroundColor = 'springgreen';
 		deleteActiveClass()
 		if (Modernizr.classList) {
@@ -148,6 +151,7 @@ function changeMenuStyle(evt){
 		} else if (previous == 5) {
 			return false;
 		}
+
 		navbar.style.backgroundColor = 'springgreen';
 		deleteActiveClass()
 		if (Modernizr.classList) {
@@ -162,6 +166,7 @@ function changeMenuStyle(evt){
 		} else if (previous == 6) {
 			return false;
 		}
+		
 		navbar.style.backgroundColor = 'springgreen';
 		deleteActiveClass()
 		if (Modernizr.classList) {
