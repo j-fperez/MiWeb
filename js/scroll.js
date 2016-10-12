@@ -94,7 +94,7 @@ function changeMenuStyle(evt){
 			return false;
 		}
 
-		navbar.style.backgroundColor = '247,247,247';
+		navbar.style.backgroundColor = 'springgreen';
 		deleteActiveClass();
 		if (Modernizr.classList) {
 			document.querySelector('a[href="#"]').parentNode.classList.add("active");
@@ -120,7 +120,7 @@ function changeMenuStyle(evt){
 		} else if (previous == 3) {
 			return false;
 		}
-		navbar.style.backgroundColor = '247,247,247';
+		navbar.style.backgroundColor = 'springgreen';
 		deleteActiveClass();
 		if (Modernizr.classList) {
 			document.querySelector('a[href$="estudios"]').parentNode.classList.add("active");
@@ -148,7 +148,7 @@ function changeMenuStyle(evt){
 		} else if (previous == 5) {
 			return false;
 		}
-		navbar.style.backgroundColor = '247,247,247';
+		navbar.style.backgroundColor = 'springgreen';
 		deleteActiveClass()
 		if (Modernizr.classList) {
 			document.querySelector('a[href$="sobre-mi"]').parentNode.classList.add("active");
