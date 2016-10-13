@@ -20,14 +20,15 @@ if (!Modernizr.inputtypes.number) {
 
 var form = document.getElementById("form-contact");
 
-/*
+
 var loadingButton = document.createElement('i');
 if (Modernizr.classList) {
 	loadingButton.classList.add("fa", "fa-spinner", "fa-spin");
 } else {
 	loadingButton.className += "fa fa-spinner fa-spin";
 }
-*/
+
+
 var otrosInput = document.getElementsByName("tipo_conocer");
 
 var inputOtros = document.createElement("input");
@@ -102,15 +103,11 @@ form.addEventListener("submit", function(evt){
 		evt.preventDefault();
 		return false;
 	}
-});
 
-/*
 	submitInput.appendChild(loadingButton);
 	evt.preventDefault();
 
 	setTimeout(function(){
 		submitInput.removeChild(loadingButton);
-		sendNotification("Formulario recibido", "Yo soy el body");
 	}, 1000);
 });
-*/
