@@ -80,14 +80,14 @@ form.addEventListener("submit", function(evt){
 		evt.preventDefault();
 		return false;
 	}
-
+/*
 	if (comentariosInput.checkValidity() == false) {
 		alert("Introduce la fecha de la mision");
 		comentarios.focus();
 		evt.preventDefault();
 		return false;
 	}
-
+*/
 	submitInput.appendChild(loadingButton);
 	evt.preventDefault();
 
