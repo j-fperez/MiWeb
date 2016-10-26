@@ -1,11 +1,5 @@
-function sendNotification(msg, body) {
+function sendNotification(msg) {
 	var notification = Notification || mozNotification || webkitNotification;
-
-	if(body){
-		var options = {
-			body: body
-		};
-	}
 
 	if ('undefined' === typeof notification) {
 		alert("Notificaciones no soportadas");

@@ -1,19 +1,3 @@
-/*
-if (!Modernizr.inputtypes.date){
-	$('<link/>', {
-		rel: 'stylesheet',
-		type: 'text/css',
-		href: 'https://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css'
-	}).appendTo('head');
-
-	$.getScript('https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js')
-		.done(function() {
-			$('input[type="date"]').datepicker({
-				dateFormat: 'yy-mm-dd'
-			});
-		});
-}
-*/
 if (!Modernizr.inputtypes.number) {
 	$.getScript('js/number-polyfill.js');
 }
@@ -109,5 +93,6 @@ form.addEventListener("submit", function(evt){
 
 	setTimeout(function(){
 		submitInput.removeChild(loadingButton);
+		sendNotification("Formulario recibido");
 	}, 1000);
 });
